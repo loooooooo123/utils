@@ -1,0 +1,110 @@
+/* 全局提示框 */
+.clear1{
+    clear: both;
+}
+.cursor{
+    cursor: pointer;
+}
+.xo_window_par{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:999;
+}
+.xo_window_par .xo_window_con{
+    width:auto;
+    height:auto;
+    position: fixed;
+    border-radius:6px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    min-width:360px;
+    max-width:600px;
+}
+.xo_window_par .msg_title{
+    float:left;
+    width:100%;
+    background:#1aa1a7;
+    padding:5px 20px;
+    box-sizing: border-box;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+}
+.xo_window_par .title_span{
+    color:white;
+    float:left;
+    line-height:25px;
+    font-size:14px;
+}
+.xo_window_par .icon_close{
+    width:24px;
+    height:24px;
+    line-height: 22px;
+    background:url('images/xiao/close.png') no-repeat;
+    float:right;
+    text-indent:9999px;
+    overflow:hidden;
+}
+.xo_window_par .msg_con{
+    float:left;
+    width:100%;
+    background:white;
+    padding-bottom:15px;
+}
+.xo_window_par .msg_con2{
+    padding-bottom:0;
+}
+.xo_window_par .msg_content{
+    float:left;
+    width:100%;
+    text-align:center;
+    margin:20px 0 0 0;
+}
+.xo_window_par .icon_title{
+    width:26px;
+    height:26px;
+    vertical-align: middle;
+    margin-right:5px;
+}
+.xo_window_par .msg_text{
+    margin:0 auto;
+    width:auto;
+    min-width: 50%;
+    max-width: 80%;
+    line-height:25px;
+    font-size:14px;
+}
+.xo_window_par .msg_footer{
+    margin:25px auto;
+    width:200px;
+}
+.xo_window_par .xo_window_btn1{
+    background:none;
+    border:none;
+    color:rgba(0,0,0,0.6);
+    outline: none;
+    margin:25px 0 0 0;
+    text-align: center;
+    padding:6px 15px 5px 15px;
+    color:white;
+    border-radius: 3px;
+    font-size:12px;
+}
+.xo_window_par .xo_window_btn1:nth-child(1){
+    margin-left:40px;
+    margin-right:10px;
+}
+.xo_window_par .success_ok{
+    background: #01848e;
+}
+.xo_window_par .success_no{
+    background:white;
+    color:#808080;
+    border:1px solid #d9d9d9;
+    box-sizing: border-box;
+}

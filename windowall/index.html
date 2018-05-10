@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提示框</title>
+    <link rel="stylesheet" href="windowall.css">
+
+    <!-- 内联样式，没用 -->
+    <style>
+        .demoBtn1{
+            background: #01848e;
+            border:none;
+            color:rgba(0,0,0,0.6);
+            outline: none;
+            margin:25px 0 0 0;
+            text-align: center;
+            padding:6px 15px 5px 15px;
+            color:white;
+            border-radius: 3px;
+            font-size:12px;
+        }
+        .demoBtn2{
+            background:white;
+            color:#808080;
+            border:1px solid #d9d9d9;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>提示框：</h2>
+    <button type="button" id="btn4" class="demoBtn1 cursor">弹出确认提示框</button>
+    <button type="button" id="btn1" class="demoBtn1 demoBtn2 cursor">弹出成功提示框，1.5秒消失</button>
+    <button type="button" id="btn2" class="demoBtn1 demoBtn2 cursor">弹出失败提示框，1.5秒消失</button>
+    <button type="button" id="btn3" class="demoBtn1 demoBtn2 cursor">弹出提示提示框，1.5秒消失</button>
+    <button type="button" id="btn5" class="demoBtn1 demoBtn2 cursor">弹出2个以上提示框</button>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="windowall.js"></script>
+    <script>
+    $(function(){
+        //实例化
+        var xjy1 = new xjy_public();
+
+        //成功提示框
+        $("#btn1").click(function(){
+            //事件加载
+            xjy1.msgWindow('标题文字',1);
+        });
+        //失败提示框
+        $("#btn2").click(function(){
+            //事件加载
+            xjy1.msgWindow('标题文字2',2);
+        });
+        //提示提示框
+        $("#btn3").click(function(){
+            //事件加载
+            xjy1.msgWindow('标题文字3',3);
+        });
+        //确认取消提示框
+        $("#btn4").click(function(){
+            //事件加载
+            xjy1.msgWindow('标题文字4',4,function(){
+                console.log('点击了确定');
+            });
+        });
+        //同时存在2个以上提示框
+        $("#btn5").click(function(){
+            //确认取消
+            xjy1.msgWindow('标题文字5',4,function(){
+                console.log('点击了确定啊');
+            });
+            //提示
+            xjy1.msgWindow('标题文字6',3);
+            //失败
+            xjy1.msgWindow('标题文字7',2);
+        });
+    })
+    </script>
+</body>
+</html>
