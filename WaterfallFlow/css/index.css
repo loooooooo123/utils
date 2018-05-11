@@ -1,0 +1,7 @@
+@charset "UTF-8";
+#main { position: relative; margin: auto; background: #f0f0f0; width:100%;}
+.item { position: absolute; padding: 10px;max-width:300px;}
+.pic { padding: 10px; border: 1px solid #666; }
+.pic img{
+    width:100%;
+}
