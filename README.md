@@ -10,5 +10,13 @@ html5,js,jquery,css3
 
 #### 使用说明
 
-windowall为弹窗实例（响应式自适应）
-WaterfallFlow为瀑布流实例（响应式自适应）
+<ul>
+    <li>
+        windowall为弹窗实例（响应式自适应）
+    </li>
+    <li>
+        WaterfallFlow为瀑布流实例（响应式自适应）
+    </li>
+</ul>
+
+
