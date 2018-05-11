@@ -21,7 +21,7 @@ html5,js,jquery,css3
         WaterfallFlow为瀑布流实例（响应式自适应宽度+滚动加载数据）
     </li>
     <li>
-       弹幕实例（静态数据，需自己写socket实现）
+       Barrage为弹幕实例（静态数据，需自己写socket实现）
     </li>
 </ul>
 
