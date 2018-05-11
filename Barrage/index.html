@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹幕实例</title>
+    <style>
+        /* 自定义样式 */
+        html,body,.content{
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        /* 播放器容器 */
+        .content{
+            width:50%;
+            height:80%;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background:rgba(0,0,0,0.35);
+        }
+    </style>
+    <link rel="stylesheet" href="css/barrage.css"/>
+</head>
+<body>
+
+    <!-- 播放器容器，通常在此容器内显示弹幕 -->
+    <div class="content" id="content">
+
+    </div>
+
+    <!-- 弹幕控制 -->
+    <div class="barrageBar">
+        <input type="text" class="barrageInput left" id="barrageInput"/>
+        <div class="barrageSend left" id="barrageSend" onclick="barrageSend()">发送</div>
+        <div class="barrageInfo left">
+            <span class="sp1 left">字体大小：</span>
+            <input type="text" class="barrageFontSize left" value="14" id="barrageFontSize"/>
+            <span class="sp1 left">字体颜色：</span>
+            <input type="text" class="barrageFontColor left" value="black" id="barrageFontColor"/>
+        </div>
+    </div>
+
+    <!-- 工具函数库 -->
+    <script src="../public/index.js"></script>
+
+    <!-- 自定义js -->
+    <script>
+        //当前弹幕显示在的容器
+        var dom = document.getElementById('content');
+        //当前弹幕显示在的容器的css宽度
+        var getParDomWidth=getStyle(dom,'width').replace('px','');
+        //当前弹幕显示在的容器的css高度
+        var getParDomHeight=getStyle(dom,'height').replace('px','');
+    </script>
+
+    <!-- 弹幕核心函数 -->
+    <script src="js/barrage.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.barrageBar{
+    width:50%;
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.left{
+    float:left;
+}
+.barrageInput{
+    width:300px;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #1aa1a7;
+    background:white;
+    outline: none;
+    text-indent:10px;
+}
+.barrageSend{
+    padding:5px 15px;
+    height:24px;
+    background:#1aa1a7;
+    color:white;
+    cursor: pointer;
+}
+.barrageSend:active{
+    background:#01848e;
+}
+.barrageInfo{
+    margin:0 0 0 50px;
+    line-height:32px;
+}
+.barrageInfo input{
+    width:80px;
+    height:26px;
+    margin:2px 15px 0 0;
+    border:1px solid #cecece;
+    text-indent: 5px;
+}
